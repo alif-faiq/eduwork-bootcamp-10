@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Biodata - Muhammad Alif Faiq</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                Alif<span>Profile</span>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <button class="btn btn-warning btn-sm px-3"
+                                data-bs-toggle="modal"
+                                data-bs-target="#contactModal">
+                            Contact Me
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- HERO / SECTION 1 -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="row align-items-center g-5">
+
+                    <div class="col-lg-7 order-2 order-lg-1">
+                        <p class="eyebrow">WELCOME TO MY WEBSITE</p>
+
+                        <h1 class="hero-title">
+                            Halo, Saya <span>Muhammad Alif Faiq</span>
+                        </h1>
+
+                        <h2 class="hero-subtitle">Web Developer</h2>
+
+                        <p class="hero-description">
+                            Saya adalah seorang pengembang web yang memiliki ketertarikan
+                            pada teknologi, pemrograman, dan pengembangan aplikasi berbasis web.
+                        </p>
+
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                            <a href="#about" class="btn btn-primary btn-lg">
+                                Pelajari Lebih Lanjut
+                            </a>
+
+                            <button class="btn btn-outline-primary btn-lg"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#contactModal">
+                                <i class="bi bi-envelope-fill me-1"></i>
+                                Hubungi Saya
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 order-1 order-lg-2">
+                        <div class="hero-image-wrapper">
+                            <img src="images/profile.JPG"
+                                 class="img-fluid hero-image"
+                                 alt="Foto profile Muhammad Alif Faiq">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT / SECTION 2 -->
+        <section id="about" class="about-section py-5">
+            <div class="container py-lg-4">
+
+                <div class="section-heading text-center mb-5">
+                    <p class="eyebrow">WHO AM I</p>
+                    <h2>About Me</h2>
+                    <p>Informasi singkat mengenai saya.</p>
+                </div>
+
+                <!-- DIV + BOOTSTRAP GRID, menggantikan TABLE -->
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+                    <div class="col">
+                        <div class="biodata-card h-100">
+                            <i class="bi bi-person-fill biodata-icon"></i>
+                            <span>Nama Lengkap</span>
+                            <strong>Muhammad Alif Faiq</strong>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="biodata-card h-100">
+                            <i class="bi bi-mortarboard-fill biodata-icon"></i>
+                            <span>Pendidikan</span>
+                            <strong>S1-Sistem Informasi</strong>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="biodata-card h-100">
+                            <i class="bi bi-code-slash biodata-icon"></i>
+                            <span>Pekerjaan</span>
+                            <strong>Web Developer</strong>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="biodata-card h-100">
+                            <i class="bi bi-envelope-fill biodata-icon"></i>
+                            <span>Email</span>
+                            <strong>aliffaiq976@gmail.com</strong>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="biodata-card h-100">
+                            <i class="bi bi-geo-alt-fill biodata-icon"></i>
+                            <span>Kota</span>
+                            <strong>Jakarta Timur</strong>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="biodata-card h-100">
+                            <i class="bi bi-tools biodata-icon"></i>
+                            <span>Keahlian</span>
+                            <strong>
+                                PHP, CodeIgniter, MySQL, JavaScript, Docker, Git, GitHub, 
+                                Bootstrap, API, REST API, dan lainnya.
+                            </strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO / SECTION 3 -->
+        <section id="portfolio" class="portfolio-section py-5">
+            <div class="container py-lg-4">
+
+                <div class="section-heading text-center mb-5">
+                    <p class="eyebrow">MY WORK</p>
+                    <h2>Portfolio</h2>
+                    <p>Beberapa project yang pernah saya kerjakan.</p>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+                    <div class="col">
+                        <article class="portfolio-card h-100">
+                            <div class="portfolio-image">
+                                <img src="images/projek-1.png"
+                                     class="img-fluid"
+                                     alt="Portal Berita With API">
+                            </div>
+                            <div class="portfolio-content">
+                                <span class="project-number">01</span>
+                                <h3>Portal Berita With API</h3>
+                                <p>
+                                    Website portal berita yang menggunakan API
+                                    untuk mengambil data berita.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="portfolio-card h-100">
+                            <div class="portfolio-image">
+                                <img src="images/projek-2.png"
+                                     class="img-fluid"
+                                     alt="E-commerce Website Jobina Kitchen">
+                            </div>
+                            <div class="portfolio-content">
+                                <span class="project-number">02</span>
+                                <h3>E-commerce Website Jobina Kitchen</h3>
+                                <p>
+                                    Website e-commerce untuk menampilkan dan
+                                    menjual produk Jobina Kitchen.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="portfolio-card h-100">
+                            <div class="portfolio-image">
+                                <img src="images/projek-3.png"
+                                     class="img-fluid"
+                                     alt="Data Management System Mahasiswa">
+                            </div>
+                            <div class="portfolio-content">
+                                <span class="project-number">03</span>
+                                <h3>Data Management System Mahasiswa</h3>
+                                <p>
+                                    Sistem untuk mengelola dan menampilkan data
+                                    mahasiswa berbasis web.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-section">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Muhammad Alif Faiq. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL POPUP -->
+    <div class="modal fade" id="contactModal" tabindex="-1"
+         aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="contactModalLabel">Hubungi Saya</h5>
+                    <button type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p class="mb-4">
+                        Terima kasih sudah mengunjungi profile saya.
+                        Silakan hubungi melalui informasi berikut.
+                    </p>
+
+                    <div class="contact-item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <div>
+                            <small>Email</small>
+                            <strong>aliffaiq976@gmail.com</strong>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="bi bi-github"></i>
+                        <div>
+                            <small>GitHub</small>
+                            <strong>github.com/alif-faiq</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="bi bi-instagram"></i>
+                        <div>
+                            <small>Instagram</small>
+                            <strong>instagram.com/alwww976</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal">
+                        Tutup
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

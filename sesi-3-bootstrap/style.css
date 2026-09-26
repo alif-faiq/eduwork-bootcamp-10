@@ -1,0 +1,802 @@
+/* =========================
+   RESET & GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;/* =========================
+   GLOBAL
+========================= */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2937;
+    background: #f4f7ff;
+}
+
+img {
+    max-width: 100%;
+}
+
+.eyebrow {
+    color: #2563eb;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.custom-navbar {
+    background: linear-gradient(135deg, #1d4ed8, #2563eb, #7c3aed);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.2);
+}
+
+.custom-navbar .navbar-brand span {
+    color: #bfdbfe;
+}
+
+.custom-navbar .nav-link {
+    color: #ffffff;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link:focus {
+    color: #dbeafe;
+}
+
+.custom-navbar .btn-warning {
+    font-weight: 700;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 0 80px;
+    background:
+        radial-gradient(circle at 90% 10%, rgba(96, 165, 250, 0.28), transparent 30%),
+        linear-gradient(135deg, #eff6ff 0%, #ffffff 55%, #f5f3ff 100%);
+}
+
+.hero-title {
+    color: #172554;
+    font-size: clamp(2.5rem, 5vw, 4.4rem);
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.hero-title span {
+    color: #2563eb;
+}
+
+.hero-subtitle {
+    color: #7c3aed;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.hero-description {
+    color: #475569;
+    max-width: 650px;
+    margin-bottom: 28px;
+}
+
+.hero-image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image {
+    width: min(430px, 100%);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 28px;
+    border: 10px solid #ffffff;
+    box-shadow: 0 20px 45px rgba(30, 64, 175, 0.18);
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-section {
+    background: #ffffff;
+}
+
+.section-heading h2 {
+    color: #172554;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.section-heading > p:last-child {
+    color: #64748b;
+}
+
+.biodata-card {
+    min-height: 175px;
+    padding: 25px;
+    border: 1px solid #dbeafe;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #ffffff, #eff6ff);
+    box-shadow: 0 8px 22px rgba(30, 64, 175, 0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.biodata-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.14);
+}
+
+.biodata-icon {
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 13px;
+    border-radius: 50%;
+    color: #ffffff;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    font-size: 1.15rem;
+}
+
+.biodata-card span {
+    color: #2563eb;
+    font-size: 0.82rem;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.biodata-card strong {
+    color: #334155;
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================
+   PORTFOLIO
+========================= */
+
+.portfolio-section {
+    background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+.portfolio-card {
+    overflow: hidden;
+    border-radius: 18px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 26px rgba(15, 23, 42, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(37, 99, 235, 0.14);
+}
+
+.portfolio-image {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #e2e8f0;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.portfolio-card:hover .portfolio-image img {
+    transform: scale(1.04);
+}
+
+.portfolio-content {
+    padding: 22px;
+}
+
+.project-number {
+    color: #7c3aed;
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+
+.portfolio-content h3 {
+    color: #172554;
+    font-size: 1.08rem;
+    margin: 5px 0 8px;
+}
+
+.portfolio-content p {
+    color: #64748b;
+    font-size: 0.93rem;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal-content {
+    border: 0;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.modal-header {
+    border: 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 14px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    background: #f8fafc;
+}
+
+.contact-item i {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #ffffff;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+}
+
+.contact-item small {
+    display: block;
+    color: #64748b;
+}
+
+.contact-item strong {
+    display: block;
+    color: #334155;
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer-section {
+    padding: 22px 0;
+    color: #dbeafe;
+    background: linear-gradient(135deg, #1e3a8a, #4c1d95);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991.98px) {
+    .hero-section {
+        padding-top: 120px;
+        padding-bottom: 70px;
+    }
+
+    .hero-title {
+        font-size: clamp(2.4rem, 7vw, 3.6rem);
+    }
+
+    .custom-navbar .nav-link {
+        margin-left: 0;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767.98px) {
+    .hero-section {
+        min-height: auto;
+        text-align: center;
+        padding-top: 115px;
+        padding-bottom: 65px;
+    }
+
+    .hero-image-wrapper {
+        order: -1;
+    }
+
+    .hero-image {
+        width: min(310px, 90%);
+        border-width: 7px;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-heading h2 {
+        font-size: 1.8rem;
+    }
+
+    .biodata-card {
+        min-height: 150px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 420px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .hero-section .btn {
+        width: 100%;
+    }
+
+    .portfolio-content {
+        padding: 18px;
+    }
+}
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2937;
+    background: #f4f7ff;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   HEADER / NAVBAR
+========================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    min-height: 72px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #1d4ed8, #2563eb, #7c3aed);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.22);
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 1.45rem;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #bfdbfe;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu a {
+    color: #ffffff;
+    font-weight: 700;
+    transition: 0.25s ease;
+}
+
+.menu a:hover {
+    color: #dbeafe;
+}
+
+
+/* =========================
+   SHARED SECTION
+========================= */
+
+.section {
+    padding: 85px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.eyebrow {
+    color: #2563eb;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.section-heading h2 {
+    font-size: 2.2rem;
+    color: #172554;
+    margin-bottom: 8px;
+}
+
+.section-heading > p:last-child {
+    color: #64748b;
+}
+
+
+/* =========================
+   HERO - CSS GRID
+========================= */
+
+.hero {
+    min-height: calc(100vh - 72px);
+    padding: 70px 8%;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    gap: 60px;
+    background:
+        radial-gradient(circle at top right, rgba(96, 165, 250, 0.25), transparent 35%),
+        linear-gradient(135deg, #eff6ff 0%, #ffffff 55%, #f5f3ff 100%);
+}
+
+.hero-content h1 {
+    font-size: clamp(2.4rem, 5vw, 4.2rem);
+    line-height: 1.12;
+    color: #172554;
+    margin-bottom: 12px;
+}
+
+.hero-content h1 span {
+    color: #2563eb;
+}
+
+.hero-content h2 {
+    color: #7c3aed;
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+}
+
+.hero-description {
+    max-width: 620px;
+    color: #475569;
+    margin-bottom: 28px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: #ffffff;
+    font-weight: 700;
+    box-shadow: 0 10px 22px rgba(37, 99, 235, 0.22);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 26px rgba(124, 58, 237, 0.25);
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: min(420px, 100%);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 28px;
+    border: 10px solid #ffffff;
+    box-shadow: 0 20px 45px rgba(30, 64, 175, 0.18);
+}
+
+
+/* =========================
+   BIODATA - DIV + CSS GRID
+========================= */
+
+.about {
+    background: #ffffff;
+}
+
+.biodata-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.biodata-card {
+    min-height: 125px;
+    padding: 23px;
+    border: 1px solid #dbeafe;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #ffffff, #eff6ff);
+    box-shadow: 0 8px 22px rgba(30, 64, 175, 0.07);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.biodata-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(37, 99, 235, 0.13);
+}
+
+.biodata-label {
+    color: #2563eb;
+    font-size: 0.83rem;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.biodata-card strong {
+    color: #334155;
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================
+   PORTFOLIO - CSS GRID
+========================= */
+
+.portfolio {
+    background:
+        linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.portfolio-card {
+    overflow: hidden;
+    border-radius: 18px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 26px rgba(15, 23, 42, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(37, 99, 235, 0.14);
+}
+
+.portfolio-image {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #e2e8f0;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.portfolio-card:hover .portfolio-image img {
+    transform: scale(1.04);
+}
+
+.portfolio-content {
+    padding: 22px;
+}
+
+.project-number {
+    color: #7c3aed;
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+
+.portfolio-content h3 {
+    margin: 5px 0 8px;
+    color: #172554;
+    font-size: 1.1rem;
+}
+
+.portfolio-content p {
+    color: #64748b;
+    font-size: 0.93rem;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 22px 8%;
+    text-align: center;
+    color: #dbeafe;
+    background: linear-gradient(135deg, #1e3a8a, #4c1d95);
+}
+
+
+/* =========================
+   RESPONSIVE : TABLET
+========================= */
+
+@media (max-width: 992px) {
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .hero,
+    .section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr 0.9fr;
+        gap: 35px;
+    }
+
+    .biodata-grid,
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .biodata-card:last-child {
+        grid-column: span 2;
+    }
+}
+
+
+/* =========================
+   RESPONSIVE : MOBILE
+========================= */
+
+@media (max-width: 700px) {
+    .navbar {
+        min-height: auto;
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .menu {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu a {
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-top: 55px;
+        padding-bottom: 55px;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image {
+        order: -1;
+    }
+
+    .hero-image img {
+        width: min(300px, 90%);
+    }
+
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .section-heading h2 {
+        font-size: 1.8rem;
+    }
+
+    .biodata-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .biodata-card:last-child {
+        grid-column: auto;
+    }
+
+    .biodata-card {
+        min-height: 110px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 420px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
